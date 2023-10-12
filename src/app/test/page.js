@@ -14,17 +14,18 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "@/components/ui/hover-card"
+
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
 
 
 export default function Home() {
-
-  const router = useRouter();
+    const router = useRouter();
 
     useEffect(() => {
-        router.push('https://forms.gle/m4b8aCCgmhUBbDuj7') 
+        router.push('/') 
       }, [])
+      
 
   const availablePositions = [
     {
